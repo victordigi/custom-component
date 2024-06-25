@@ -1,5 +1,5 @@
-import HelloWorld from "./HelloWorld.vue"
+import DigiButton from "./DigiButton.vue"
 
 export {
-  HelloWorld,
+  DigiButton,
 }

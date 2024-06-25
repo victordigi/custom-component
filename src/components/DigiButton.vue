@@ -2,12 +2,13 @@
 defineProps({
   msg: String,
 })
-
+const aaa = () => {
+  alert("啊啊啊啊啊啊");
+}
 </script>
 
 <template>
-  <h1>I am a custom component!</h1>
-  <p>this message is parent {{ msg }}</p>
+  <button @click="aaa">{{ msg }}</button>
 </template>
 
 <style scoped>
