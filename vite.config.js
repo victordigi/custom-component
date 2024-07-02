@@ -10,8 +10,10 @@ export default defineConfig({
     lib: {
       entry: 'src/components/index.js',
       name: 'MyComponents',
+      // formats: ['umd', 'es', 'cjs'],
       fileName: (format) => `components/index.${format}.js`
     },
+    minify: true,
     rollupOptions: {
       external: ['vue'],
       output: {
@@ -22,22 +24,3 @@ export default defineConfig({
     }
   }
 });
-
-// export default defineConfig({
-//   plugins: [vue()],
-//   build: {
-//     lib: {
-//       entry: 'src/index.js',
-//       name: 'MyComponents',
-//       fileName: (format) => `my-component.${format}.js`
-//     },
-//     rollupOptions: {
-//       external: ['vue'],
-//       output: {
-//         globals: {
-//           vue: 'Vue'
-//         }
-//       }
-//     }
-//   }
-// });
