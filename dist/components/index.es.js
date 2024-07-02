@@ -1,16 +1,24 @@
-import { openBlock as o, createElementBlock as e, toDisplayString as r } from "vue";
-const s = {
+import { openBlock as e, createElementBlock as c, toDisplayString as s } from "vue";
+const a = {
   __name: "DigiButton",
   props: {
     msg: String
   },
   setup(t) {
-    const n = () => {
+    const o = () => {
       alert("啊啊啊啊啊啊");
     };
-    return (a, c) => (o(), e("button", { onClick: n }, r(t.msg), 1));
+    return (n, l) => (e(), c("button", { onClick: o }, s(t.msg), 1));
   }
+}, r = [
+  a
+], i = function(t, o = {}) {
+  r.forEach((n) => {
+    t.component(n.name, n);
+  });
+}, p = {
+  install: i
 };
 export {
-  s as DigiButton
+  p as default
 };
