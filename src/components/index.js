@@ -1,9 +1,15 @@
 import DigiButton from "./DigiButton.vue"
 
-// export {
-//   DigiButton,
-// }
+
+const Components = [
+  DigiButton
+]
+const install = function (Vue, opts = {}) {
+  Components.forEach(component => {
+    Vue.component(component.name, component)
+  })
+ }
+
 export default {
-  version: VERSION,
-  DigiButton,
+  install,
 }
