@@ -10,7 +10,7 @@ export default defineConfig({
     outDir: 'dist',
     lib: {
       entry: 'src/components/index.js',
-      name: 'digi-components',
+      name: 'DigiComponents',
       // formats: ['umd', 'es', 'cjs'],
       fileName: (format) => `index.${format}.js`
     },
