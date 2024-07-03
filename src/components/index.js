@@ -1,21 +1,21 @@
 import DigiButton from "./DigiButton.vue"
 
 
-// const Components = [
-//   DigiButton
-// ]
-// const install = function (App) {
-//   Components.forEach(component => {
-//     App.component(component.name, component)
-//   })
-//  }
+const Components = [
+  DigiButton
+]
+const install = function (App) {
+  Components.forEach(component => {
+    App.component(component.name, component)
+  })
+ }
 
-// export default {
-//   install,
-// }
+export default {
+  install,
+}
 
-module.exports = {
-    install: function (Vue, options) {
-        Vue.component('DigiButton', DigiButton);
-    }
-};
+// module.exports = {
+//     install: function (Vue, options) {
+//         Vue.component('DigiButton', DigiButton);
+//     }
+// };
