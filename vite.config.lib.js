@@ -12,7 +12,7 @@ export default defineConfig({
       entry: 'src/components/index.js',
       name: 'digi-components',
       // formats: ['umd', 'es', 'cjs'],
-      fileName: (format) => `components/index.${format}.js`
+      fileName: (format) => `index.${format}.js`
     },
     minify: true,
     rollupOptions: {

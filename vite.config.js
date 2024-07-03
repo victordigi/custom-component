@@ -5,8 +5,5 @@ export default defineConfig({
   plugins: [vue(),],
   build: {
     outDir: 'doc',
-    rollupOptions: {
-      // input: 'src/main.js'
-    }
   }
 });
