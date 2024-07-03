@@ -1,4 +1,4 @@
-// import DigiButton from "./DigiButton.vue"
+import DigiButton from "./DigiButton.vue"
 
 
 // const Components = [
@@ -13,8 +13,6 @@
 // export default {
 //   install,
 // }
-
-let DigiButton = require('./DigiButton');
 
 module.exports = {
     install: function (Vue, options) {
