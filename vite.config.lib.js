@@ -14,9 +14,9 @@ export default defineConfig({
       // formats: ['umd', 'es', 'cjs'],
       fileName: (format) => `index.${format}.js`
     },
-    minify: true,
+    minify: false,
     rollupOptions: {
-      external: ['vue'],
+      // external: ['vue'],
       output: {
         globals: {
           vue: 'Vue'
