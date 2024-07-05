@@ -16,7 +16,7 @@ export default defineConfig({
     },
     minify: false,
     rollupOptions: {
-      // external: ['vue'],
+      external: ['vue'],
       output: {
         globals: {
           vue: 'Vue'
