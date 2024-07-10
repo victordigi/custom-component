@@ -7,6 +7,9 @@ import DigiButton from "./DigiButton.vue"
 // export default {
 //     install,
 // };
+DigiButton.install = function (Vue) {
+  Vue.component("digi-button", DigiButton);
+};
 export { DigiButton };
 // const Components = [
 //   DigiButton

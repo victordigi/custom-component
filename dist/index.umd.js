@@ -16,6 +16,9 @@
       };
     }
   };
+  _sfc_main.install = function(Vue) {
+    Vue.component("digi-button", _sfc_main);
+  };
   exports2.DigiButton = _sfc_main;
   Object.defineProperty(exports2, Symbol.toStringTag, { value: "Module" });
 });

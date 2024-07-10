@@ -13,6 +13,9 @@ const _sfc_main = {
     };
   }
 };
+_sfc_main.install = function(Vue) {
+  Vue.component("digi-button", _sfc_main);
+};
 export {
   _sfc_main as DigiButton
 };
