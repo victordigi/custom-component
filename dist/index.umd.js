@@ -1,24 +1,8 @@
 (function(global, factory) {
-  typeof exports === "object" && typeof module !== "undefined" ? factory(exports, require("vue")) : typeof define === "function" && define.amd ? define(["exports", "vue"], factory) : (global = typeof globalThis !== "undefined" ? globalThis : global || self, factory(global.DigiComponents = {}, global.Vue));
-})(this, function(exports2, vue) {
+  typeof exports === "object" && typeof module !== "undefined" ? factory(exports) : typeof define === "function" && define.amd ? define(["exports"], factory) : (global = typeof globalThis !== "undefined" ? globalThis : global || self, factory(global.DigiComponents = {}));
+})(this, function(exports2) {
   "use strict";
-  const _sfc_main = {
-    __name: "DigiButton",
-    props: {
-      msg: String
-    },
-    setup(__props) {
-      const aaa = () => {
-        alert("啊啊啊啊啊啊");
-      };
-      return (_ctx, _cache) => {
-        return vue.openBlock(), vue.createElementBlock("button", { onClick: aaa }, vue.toDisplayString(__props.msg), 1);
-      };
-    }
-  };
-  _sfc_main.install = function(Vue) {
-    Vue.component("digi-button", _sfc_main);
-  };
-  exports2.DigiButton = _sfc_main;
+  const DigiButton = "./DigiButton.vue";
+  exports2.DigiButton = DigiButton;
   Object.defineProperty(exports2, Symbol.toStringTag, { value: "Module" });
 });

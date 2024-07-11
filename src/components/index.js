@@ -1,4 +1,4 @@
-import DigiButton from "./DigiButton.vue"
+const DigiButton = "./DigiButton.vue"
 
 // const install = (app) => {
 //     app.component(DigiButton.name, DigiButton);
@@ -7,9 +7,9 @@ import DigiButton from "./DigiButton.vue"
 // export default {
 //     install,
 // };
-DigiButton.install = function (Vue) {
-  Vue.component("digi-button", DigiButton);
-};
+// DigiButton.install = function (Vue) {
+//   Vue.component("digi-button", DigiButton);
+// };
 export { DigiButton };
 // const Components = [
 //   DigiButton
