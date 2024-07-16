@@ -1,15 +1,19 @@
-import { openBlock, createElementBlock, toDisplayString } from "vue";
+import { ref, openBlock, createElementBlock, Fragment, createElementVNode, toDisplayString } from "vue";
 const _sfc_main$k = {
   __name: "DigiButton",
   props: {
     msg: String
   },
   setup(__props) {
-    const aaa = () => {
-      alert("啊啊啊啊啊啊");
+    const switcher = ref(true);
+    const handleChange = () => {
+      switcher.value = !switcher.value;
     };
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("button", { onClick: aaa }, toDisplayString(__props.msg), 1);
+      return openBlock(), createElementBlock(Fragment, null, [
+        createElementVNode("p", null, toDisplayString(__props.msg), 1),
+        createElementVNode("button", { onClick: handleChange }, toDisplayString(switcher.value), 1)
+      ], 64);
     };
   }
 };

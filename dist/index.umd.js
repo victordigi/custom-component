@@ -8,11 +8,15 @@
       msg: String
     },
     setup(__props) {
-      const aaa = () => {
-        alert("啊啊啊啊啊啊");
+      const switcher = vue.ref(true);
+      const handleChange = () => {
+        switcher.value = !switcher.value;
       };
       return (_ctx, _cache) => {
-        return vue.openBlock(), vue.createElementBlock("button", { onClick: aaa }, vue.toDisplayString(__props.msg), 1);
+        return vue.openBlock(), vue.createElementBlock(vue.Fragment, null, [
+          vue.createElementVNode("p", null, vue.toDisplayString(__props.msg), 1),
+          vue.createElementVNode("button", { onClick: handleChange }, vue.toDisplayString(switcher.value), 1)
+        ], 64);
       };
     }
   };

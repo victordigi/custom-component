@@ -1,14 +1,17 @@
 <script setup>
+import { ref } from 'vue'
 defineProps({
   msg: String,
 })
-const aaa = () => {
-  alert("啊啊啊啊啊啊");
+const switcher = ref(true)
+const handleChange = () => {
+  switcher.value = !switcher.value;
 }
 </script>
 
 <template>
-  <button @click="aaa">{{ msg }}</button>
+  <p>{{ msg }}</p>
+  <button @click="handleChange">{{ switcher }}</button>
 </template>
 
 <style scoped>
