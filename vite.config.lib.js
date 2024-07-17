@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import copy from 'rollup-plugin-copy';
+import * as path from "path";
 // import importToConst from 'rollup-plugin-import-to-const'
 
 export default defineConfig({
@@ -11,7 +11,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     lib: {
-      entry: 'src/components/index.js',
+      entry: path.resolve(__dirname, 'src/components/index.js'),
       name: 'DigiComponents',
       // formats: ['umd', 'es', 'cjs'],
       fileName: (format) => `index.${format}.js`
